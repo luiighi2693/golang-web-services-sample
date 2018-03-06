@@ -4,7 +4,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-func retrieve(id int) (post Post, err error)  {
+func retrievePost(id int) (post Post, err error)  {
 	post = Post{}
 	err = Db.QueryRow("select id, content, author from posts where id = $1",
 		id).Scan(&post.Id, &post.Content, &post.Author)

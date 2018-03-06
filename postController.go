@@ -36,7 +36,7 @@ func getPost(w http.ResponseWriter, r *http.Request) (err error) {
 	if err != nil {
 		return
 	}
-	post, err := retrieve(id)
+	post, err := retrievePost(id)
 	if err != nil {
 		return
 	}
@@ -66,7 +66,7 @@ func updatePost(w http.ResponseWriter, r *http.Request) (err error) {
 	if err != nil {
 		return
 	}
-	post, err := retrieve(id)
+	post, err := retrievePost(id)
 	if err != nil {
 		return
 	}
@@ -87,7 +87,7 @@ func deletePost(w http.ResponseWriter, r *http.Request) (err error) {
 	if err != nil {
 		return
 	}
-	post, err := retrieve(id)
+	post, err := retrievePost(id)
 	if err != nil {
 		return
 	}

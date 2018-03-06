@@ -54,7 +54,7 @@ func createComment(w http.ResponseWriter, r *http.Request) (err error) {
 	r.Body.Read(body)
 	var comment Comment
 	json.Unmarshal(body, &comment)
-	err = comment.createComment()
+	err = comment.create()
 	if err != nil {
 		return
 	}
@@ -74,7 +74,7 @@ func updateComment(w http.ResponseWriter, r *http.Request) (err error) {
 	body := make([]byte, len)
 	r.Body.Read(body)
 	json.Unmarshal(body, &comment)
-	err = comment.updateComment()
+	err = comment.update()
 	if err != nil {
 		return
 	}
@@ -91,7 +91,7 @@ func deleteComment(w http.ResponseWriter, r *http.Request) (err error) {
 	if err != nil {
 		return
 	}
-	err = comment.deleteComment()
+	err = comment.delete()
 	if err != nil {
 		return
 	}
