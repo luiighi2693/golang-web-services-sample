@@ -4,6 +4,11 @@ import (
 	_ "github.com/lib/pq"
 )
 
+// TODO: Mejores practicas nombrr carpeta y proyectos
+// TODO: Separar Model en otro archivo
+// TODO: Separar Model en otra libreria
+// TODO: Comparar IRIS
+// TODO: pruebas unitarias
 func retrievePost(id int) (post Post, err error)  {
 	post = Post{}
 	err = Db.QueryRow("select id, content, author from posts where id = $1",
