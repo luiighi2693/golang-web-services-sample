@@ -1,0 +1,144 @@
+POST http://localhost:8080/post
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"content":"My [CA} first post","author":"Sau Sheong"}
+
+###
+
+POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"content":"My [CA} first post","author":"Sau Sheong"}
+
+###
+
+POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"content":"My [CA} first post","author":"Sau Sheong"}
+
+###
+
+POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/post
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-03-05T102207.500.txt
+
+###
+
+POST http://localhost:8080/post
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"content":"My [CA} first post","author":"Sau Sheong"}
+
+###
+
+POST http://localhost:8080/post
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+"content":"My [CA} first post","author":"Sau Sheong"
+
+###
+
+POST http://localhost:8080/post
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"content":"My [CA} first post","author":"Sau Sheong"}'
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+ad: yes
+
+<> 2018-02-12T020619.200.html
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+ad: yes
+
+<> 2018-02-12T020525.200.html
+
+###
+
+GET http://localhost:8080/admin
+Accept: */*
+Cache-Control: no-cache
+ad: yes
+
+<> 2018-02-12T020236.401.txt
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-09T025153-1.200.html
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-09T025153.200.html
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-09T025152.200.html
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-09T024919.200.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-02-09T024911.404.txt
+
+###
+
