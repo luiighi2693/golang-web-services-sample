@@ -1,3 +1,144 @@
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Content":""}
+
+<> 2018-03-08T053312.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Content":""}
+
+<> 2018-03-08T052551.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":2,"Content":""}
+
+<> 2018-03-08T052454.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":2,"Content":""}
+
+<> 2018-03-08T052354.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":"2","Content":""}
+
+<> 2018-03-08T052258.500.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":"2","Content":"bbbb","Author":"www"}
+
+<> 2018-03-08T052034.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":"2","Content":"bbbb","Author":"www"}
+
+<> 2018-03-08T051625.500.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":"2","Content":"bbbb","Author":"www"}
+
+<> 2018-03-08T050844.500.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":"2","Content":"bbbb","Author":"www"}
+
+<> 2018-03-08T050520.500.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":"2","Content":"bbbb","Author":"www"}
+
+<> 2018-03-08T050457.500.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"Id":2,"Content":"bbbb","Author":"www"}
+
+<> 2018-03-08T050056.500.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"id":"hello"}
+
+<> 2018-03-08T045514.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept:*/*
+Cache-Control:no-cache
+Content-Type:application/json
+
+{"id":"hello"}
+
+###
+
 DELETE http://localhost:8080/post/2
 Accept:*/*
 Cache-Control:no-cache

@@ -2,7 +2,8 @@ package commentController
 
 import (
 	"github.com/kataras/iris"
-	"irisProject/comment/commentService"
+	"golang-web-services-sample/comment/commentService"
+	"golang-web-services-sample/comment/commentEntitie"
 )
 
 func SetEndpoints(app *iris.Application)  {
@@ -11,5 +12,22 @@ func SetEndpoints(app *iris.Application)  {
 		comment, _ := commentService.FindById(id)
 
 		ctx.JSON(comment)
+	})
+
+	app.Get("/comment/", func(ctx iris.Context) {
+		comments, _ := commentService.FindAll()
+		ctx.JSON(comments)
+	})
+
+	app.Post("/comment/", func(ctx iris.Context) {
+		comment :=commentEntitie.Comment{}
+		err := ctx.ReadJSON(&comment)
+		if err != nil {
+			ctx.StatusCode(iris.StatusBadRequest)
+			ctx.WriteString(err.Error())
+		}else{
+			commentService.Create(comment)
+			ctx.Writef("Comment created")
+		}
 	})
 }

@@ -5,7 +5,7 @@ import (
 
 	"github.com/kataras/iris/middleware/logger"
 	"github.com/kataras/iris/middleware/recover"
-	"irisProject/comment/commentController"
+	"golang-web-services-sample/comment/commentController"
 )
 
 func main() {

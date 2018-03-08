@@ -1,8 +1,8 @@
 package commentService
 
 import (
-	"irisProject/comment/commentModel"
-	"irisProject/comment/commentEntitie"
+	"golang-web-services-sample/comment/commentEntitie"
+	"golang-web-services-sample/comment/commentModel"
 )
 
 func FindById(id int) (commentEntitie.Comment, error) {
@@ -12,4 +12,27 @@ func FindById(id int) (commentEntitie.Comment, error) {
 		return comment, err
 	}
 	return comment, err
+}
+
+func FindAll() (comments []commentEntitie.Comment, err error){
+	comments, err = commentModel.FindAll()
+	if err != nil {
+		return comments, err
+	}
+	return comments, err
+}
+
+func Create(comment commentEntitie.Comment) (err error) {
+	commentModel.Create(comment)
+	return
+}
+
+func Update(comment *commentEntitie.Comment) (err error) {
+	commentModel.Update(comment)
+	return
+}
+
+func Delete(comment *commentEntitie.Comment) (err error) {
+	commentModel.Delete(comment)
+	return
 }
