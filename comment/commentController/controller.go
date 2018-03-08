@@ -30,4 +30,21 @@ func SetEndpoints(app *iris.Application)  {
 			ctx.Writef("Comment created")
 		}
 	})
+
+	app.Put("/comment/", func(ctx iris.Context) {
+		comment :=commentEntitie.Comment{}
+		err := ctx.ReadJSON(&comment)
+		if err != nil {
+			ctx.StatusCode(iris.StatusBadRequest)
+			ctx.WriteString(err.Error())
+		}else{
+			commentService.Update(comment)
+			ctx.Writef("Comment created")
+		}
+	})
+
+	app.Delete("/comment/{id:int min(1)}", func(ctx iris.Context) {
+		id, _ := ctx.Params().GetInt("id")
+		commentService.Delete(id)
+	})
 }

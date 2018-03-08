@@ -45,13 +45,13 @@ func Create(comment commentEntitie.Comment) (err error) {
 	return
 }
 
-func Update(comment *commentEntitie.Comment) (err error) {
+func Update(comment commentEntitie.Comment) (err error) {
 	_, err = Db.Exec("update comments set content = $2, author = $3 where id = $1",
 		comment.Id, comment.Content, comment.Author)
 	return
 }
 
-func Delete(comment *commentEntitie.Comment)  (err error) {
-	_, err = Db.Exec("delete from comments where id = $1", comment.Id)
+func Delete(id int)  (err error) {
+	_, err = Db.Exec("delete from comments where id = $1", id)
 	return
 }

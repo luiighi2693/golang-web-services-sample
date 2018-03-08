@@ -27,12 +27,12 @@ func Create(comment commentEntitie.Comment) (err error) {
 	return
 }
 
-func Update(comment *commentEntitie.Comment) (err error) {
+func Update(comment commentEntitie.Comment) (err error) {
 	commentModel.Update(comment)
 	return
 }
 
-func Delete(comment *commentEntitie.Comment) (err error) {
-	commentModel.Delete(comment)
+func Delete(id int) (err error) {
+	commentModel.Delete(id)
 	return
 }
