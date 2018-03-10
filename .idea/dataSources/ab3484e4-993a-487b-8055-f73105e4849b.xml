@@ -28,7 +28,7 @@
     </role>
     <schema id="6" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-03-06.14:00:06.648</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-03-09.16:09:38.446</IntrospectionTimestamp>
       <IntrospectionStateNumber>549</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
@@ -76,22 +76,26 @@
       <NotNull>1</NotNull>
       <StateNumber>549</StateNumber>
       <DefaultExpression>nextval(&apos;comments_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
       <SequenceName>comments_id_seq</SequenceName>
     </column>
     <column id="17" parent="14" name="content">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <StateNumber>549</StateNumber>
+      <TypeId>25</TypeId>
     </column>
     <column id="18" parent="14" name="author">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>549</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
     <column id="19" parent="14" name="post_id">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <StateNumber>549</StateNumber>
+      <TypeId>23</TypeId>
     </column>
     <index id="20" parent="14" name="comments_pkey">
       <ObjectId>16405</ObjectId>
@@ -119,17 +123,20 @@
       <NotNull>1</NotNull>
       <StateNumber>548</StateNumber>
       <DefaultExpression>nextval(&apos;posts_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
       <SequenceName>posts_id_seq</SequenceName>
     </column>
     <column id="24" parent="15" name="content">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <StateNumber>548</StateNumber>
+      <TypeId>25</TypeId>
     </column>
     <column id="25" parent="15" name="author">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>548</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
     <index id="26" parent="15" name="posts_pkey">
       <ObjectId>16394</ObjectId>

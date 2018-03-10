@@ -34,7 +34,7 @@ func FindAll() (comments []commentEntitie.Comment, err error){
 	return comments, nil
 }
 
-func Create(comment commentEntitie.Comment) (err error) {
+func Create(comment commentEntitie.Comment) (id int, err error) {
 	statement := "insert into comments (content, author) values ($1, $2) returning id"
 	stmt, err := Db.Prepare(statement)
 	if err != nil {
@@ -42,7 +42,7 @@ func Create(comment commentEntitie.Comment) (err error) {
 	}
 	defer stmt.Close()
 	err = stmt.QueryRow(comment.Content, comment.Author).Scan(&comment.Id)
-	return
+	return comment.Id, err
 }
 
 func Update(comment commentEntitie.Comment) (err error) {

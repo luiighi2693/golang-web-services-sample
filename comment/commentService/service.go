@@ -22,9 +22,8 @@ func FindAll() (comments []commentEntitie.Comment, err error){
 	return comments, err
 }
 
-func Create(comment commentEntitie.Comment) (err error) {
-	commentModel.Create(comment)
-	return
+func Create(comment commentEntitie.Comment) (id int, err error) {
+	return commentModel.Create(comment)
 }
 
 func Update(comment commentEntitie.Comment) (err error) {

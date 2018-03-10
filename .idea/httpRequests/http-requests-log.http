@@ -1,4 +1,48 @@
 POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"Content":"content2","Author":"author2"}
+
+<> 2018-03-09T120427.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"Content":"content2","Author":"author2"}
+
+<> 2018-03-09T120423.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"Content":"content2","Author":"author2"}
+
+<> 2018-03-09T120024.200.txt
+
+###
+
+POST http://localhost:8080/comment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"Content":"content2","Author2":"author"}
+
+<> 2018-03-08T095601.200.txt
+
+###
+
+POST http://localhost:8080/comment
 Accept:*/*
 Cache-Control:no-cache
 Content-Type:application/json

@@ -26,8 +26,8 @@ func SetEndpoints(app *iris.Application)  {
 			ctx.StatusCode(iris.StatusBadRequest)
 			ctx.WriteString(err.Error())
 		}else{
-			commentService.Create(comment)
-			ctx.Writef("Comment created")
+			id, _ := commentService.Create(comment)
+			ctx.Writef(string(id))
 		}
 	})
 
